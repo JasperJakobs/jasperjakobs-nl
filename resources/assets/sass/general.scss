@@ -1,0 +1,38 @@
+:root {
+    --animate-delay: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+// Scrollbar
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $primary $white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $white;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 20px;
+    border: 3px solid $white;
+}
