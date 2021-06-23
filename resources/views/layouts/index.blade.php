@@ -35,8 +35,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}?v={{ date('dmyhms') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset("vendor/cookie-consent/css/cookie-consent.css")}}">
+
 </head>
 <body>
+    @include('cookie-consent::index')
     <div class="wrapper">
         <div class="main">
             <main class="content">
