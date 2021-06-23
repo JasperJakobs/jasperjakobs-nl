@@ -6,6 +6,13 @@ header {
     align-items: center;
     position: relative;
 
+    #particle-js {
+        width: 99vw;
+        height: 50vh;
+        position: absolute;
+        z-index: -1;
+    }
+
     .logo {
         width: 50vw;
 
@@ -23,7 +30,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: 0;
     }
 
     .wave_right {
@@ -31,7 +38,7 @@ header {
         position: absolute;
         right: -5px;
         bottom: 0;
-        z-index: -1;
+        z-index: 0;
     }
 
     .icon-scroll {
@@ -41,36 +48,22 @@ header {
 
 @media only screen and (min-width: 768px) {
     header {
-        width: 99vw;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+
+        #particle-js {
+            height: 100vh;
+        }
 
         .logo {
             width: 35vw;
-
-            transform: rotate(0deg) scale(1) translateZ(0);
-            transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
-
-            &:hover {
-                transform: rotate(10deg) scale(1.1);
-            }
         }
 
         .wave_left {
             width: 40vw;
-            position: absolute;
-            top: 0;
-            left: 0;
         }
 
         .wave_right {
             width: 40vw;
-            position: absolute;
-            right: -5px;
-            bottom: 0;
         }
 
         .icon-scroll {

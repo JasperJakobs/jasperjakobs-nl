@@ -1842,6 +1842,10 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
 
+__webpack_require__(/*! ./components/navbar */ "./resources/assets/js/components/navbar.js");
+
+__webpack_require__(/*! ./components/particles */ "./resources/assets/js/components/particles.js");
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":
@@ -1872,6 +1876,90 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/navbar.js":
+/*!**************************************************!*\
+  !*** ./resources/assets/js/components/navbar.js ***!
+  \**************************************************/
+/***/ (() => {
+
+// Cache selectors
+var lastId,
+    topMenu = $("#top-menu"),
+    topMenuHeight = topMenu.outerHeight() + 15,
+    // All list items
+menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+scrollItems = menuItems.map(function () {
+  var item = $($(this).attr("href"));
+
+  if (item.length) {
+    return item;
+  }
+}); // Bind click handler to menu items
+// so we can get a fancy scroll animation
+
+menuItems.click(function (e) {
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+  $('html, body').stop().animate({
+    scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+}); // Bind to scroll
+
+$(window).scroll(function () {
+  // Get container scroll position
+  var fromTop = $(this).scrollTop() + topMenuHeight; // Get id of current scroll item
+
+  var cur = scrollItems.map(function () {
+    if ($(this).offset().top < fromTop) return this;
+  }); // Get the id of the current element
+
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
+
+  if (lastId !== id) {
+    lastId = id; // Set/remove active class
+
+    menuItems.parent().removeClass("active").end().filter("[href='#" + id + "']").parent().addClass("active");
+  }
+}); // Change color when scrolling
+
+$(document).ready(function () {
+  var scroll_start = 0;
+  var startchange = $('body');
+  var offset = startchange.offset();
+
+  if (startchange.length) {
+    $(document).scroll(function () {
+      scroll_start = $(this).scrollTop();
+
+      if (scroll_start > offset.top) {
+        $("#top-menu").css('background-color', '#ffffff');
+        $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
+        $(".nav-logo").css('display', 'inline');
+      } else {
+        $('#top-menu').css('background-color', '');
+        $("#top-menu").css('box-shadow', '');
+        $(".nav-logo").css('display', '');
+      }
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/particles.js":
+/*!*****************************************************!*\
+  !*** ./resources/assets/js/components/particles.js ***!
+  \*****************************************************/
+/***/ (() => {
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particle-js', 'assets/particles.json');
 
 /***/ }),
 

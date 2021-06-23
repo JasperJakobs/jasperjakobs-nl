@@ -21,6 +21,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}?v={{ date('dmyhms') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,14 +37,17 @@
     <link href="{{ asset('css/app.css') }}?v={{ date('dmyhms') }}" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-    <div class="main">
-        <main class="content">
-            <div class="container-fluid p-0">
-                @yield('content')
-            </div>
-        </main>
+    <div class="wrapper">
+        <div class="main">
+            <main class="content">
+                <div class="container-fluid p-0">
+                    @yield('content')
+                </div>
+            </main>
+        </div>
     </div>
-</div>
+
+    <script src="{{ asset("js/particles.min.js") }}"></script>
+
 </body>
 </html>

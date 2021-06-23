@@ -16973,6 +16973,12 @@ header {
   align-items: center;
   position: relative;
 }
+header #particle-js {
+  width: 99vw;
+  height: 50vh;
+  position: absolute;
+  z-index: -1;
+}
 header .logo {
   width: 50vw;
   transform: rotate(0deg) scale(1) translateZ(0);
@@ -16986,14 +16992,14 @@ header .wave_left {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 header .wave_right {
   width: 80vw;
   position: absolute;
   right: -5px;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
 }
 header .icon-scroll {
   display: none;
@@ -17001,32 +17007,19 @@ header .icon-scroll {
 
 @media only screen and (min-width: 768px) {
   header {
-    width: 99vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  }
+  header #particle-js {
+    height: 100vh;
   }
   header .logo {
     width: 35vw;
-    transform: rotate(0deg) scale(1) translateZ(0);
-    transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
-  }
-  header .logo:hover {
-    transform: rotate(10deg) scale(1.1);
   }
   header .wave_left {
     width: 40vw;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
   header .wave_right {
     width: 40vw;
-    position: absolute;
-    right: -5px;
-    bottom: 0;
   }
   header .icon-scroll {
     display: block;
@@ -17074,6 +17067,74 @@ header .icon-scroll {
   100% {
     opacity: 0;
     transform: translateY(46px);
+  }
+}
+nav {
+  position: fixed;
+  right: 0;
+  z-index: 5;
+  margin: 0;
+  width: 100%;
+}
+nav ul {
+  background: #fff;
+  text-align: right;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  transition: 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+nav ul .nav-logo {
+  height: 34px;
+  margin-top: -10px;
+  display: inline;
+}
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+nav ul li a {
+  font-size: 14px;
+}
+nav .active a {
+  color: #1252A6;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    margin: 0;
+    width: 100%;
+  }
+  nav ul {
+    background: transparent;
+    text-align: right;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: none;
+  }
+  nav ul .nav-logo {
+    height: 34px;
+    margin-top: -30px;
+    display: none;
+  }
+  nav ul li {
+    display: inline;
+    margin: 14px;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+  nav .active a {
+    color: #1252A6;
+    font-weight: bold;
   }
 }
 :root {
