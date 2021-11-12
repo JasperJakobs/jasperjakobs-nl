@@ -17068,7 +17068,7 @@ nav {
   width: 100%;
 }
 nav ul {
-  background: #fff;
+  background: #1E242A;
   text-align: right;
   list-style-type: none;
   padding-top: 10px;
@@ -17134,7 +17134,7 @@ nav .active a {
 }
 
 .loader {
-  z-index: 100;
+  z-index: 10002;
   width: 100vw;
   height: 50vh;
   display: flex;
@@ -17148,7 +17148,7 @@ nav .active a {
   padding: 0;
   position: absolute;
   top: 50%;
-  left: 49.7%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
 }
@@ -17178,16 +17178,41 @@ nav .active a {
     stroke-dashoffset: 1000;
   }
 }
+.fromzerotohero .comparisonSection {
+  position: relative;
+  padding-bottom: 20%;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fromzerotohero .comparisonImage {
+  width: 100%;
+  height: 150%;
+}
+.fromzerotohero .comparisonImage img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.fromzerotohero .afterImage {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+}
+.fromzerotohero .afterImage img {
+  transform: translate(-100%, 0px);
+}
+
 :root {
   --animate-delay: 0.5s;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-body {
+  overflow-y: auto;
+  height: 100%;
   background-color: #1E242A;
 }
 
@@ -17202,7 +17227,7 @@ img {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #fff #fff;
+  scrollbar-color: #E85D04 #1E242A;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -17211,11 +17236,29 @@ img {
 }
 
 *::-webkit-scrollbar-track {
-  background: #fff;
+  background: #1E242A;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: #E85D04;
   border-radius: 20px;
-  border: 3px solid #fff;
+  border: 3px solid #1E242A;
+}
+
+/* Text styling */
+h1, .h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  font-family: "Arimo", sans-serif;
+  font-size: 17px;
 }

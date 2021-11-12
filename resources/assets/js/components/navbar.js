@@ -53,7 +53,7 @@ $(document).ready(function(){
         $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top + (window.innerHeight / 2)) {
-                $("#top-menu").css('background-color', '#ffffff');
+                $("#top-menu").css('background-color', '#1E242AFF');
                 $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
 
                 $(".nav-logo").css('display', 'inline');

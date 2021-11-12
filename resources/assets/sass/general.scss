@@ -2,12 +2,11 @@
     --animate-delay: 0.5s;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-body {
+    overflow-y: auto;
+    height: 100%;
     background-color: $background;
 }
 
@@ -23,7 +22,7 @@ img {
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: $primary $white;
+    scrollbar-color: $secondary $background;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -32,11 +31,29 @@ img {
 }
 
 *::-webkit-scrollbar-track {
-    background: $white;
+    background: $background;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: $primary;
+    background-color: $secondary;
     border-radius: 20px;
-    border: 3px solid $white;
+    border: 3px solid $background;
+}
+
+/* Text styling */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: $primary;
+    text-align: center;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 17px;
 }

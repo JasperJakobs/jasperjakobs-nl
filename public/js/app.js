@@ -1846,6 +1846,8 @@ __webpack_require__(/*! ./components/navbar */ "./resources/assets/js/components
 
 __webpack_require__(/*! ./components/loader */ "./resources/assets/js/components/loader.js");
 
+__webpack_require__(/*! ./components/fromzerotohero */ "./resources/assets/js/components/fromzerotohero.js");
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":
@@ -1879,6 +1881,46 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/assets/js/components/fromzerotohero.js":
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/components/fromzerotohero.js ***!
+  \**********************************************************/
+/***/ (() => {
+
+gsap.utils.toArray(".comparisonSection").forEach(function (section) {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: "center center",
+      // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+      end: function end() {
+        return "+=" + 3000;
+      },
+      scrub: true,
+      pin: true,
+      anticipatePin: 1
+    },
+    defaults: {
+      ease: "none"
+    }
+  }); // animate the container one way...
+
+  tl.fromTo(section.querySelector(".afterImage"), {
+    xPercent: -100,
+    x: 0
+  }, {
+    xPercent: 0
+  }) // ...and the image the opposite way (at the same time)
+  .fromTo(section.querySelector(".afterImage img"), {
+    xPercent: 100,
+    x: 0
+  }, {
+    xPercent: 0
+  }, 0);
+});
+
+/***/ }),
+
 /***/ "./resources/assets/js/components/loader.js":
 /*!**************************************************!*\
   !*** ./resources/assets/js/components/loader.js ***!
@@ -1887,9 +1929,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 $(window).load(function () {
   $(window).css("overflow-y", "hidden");
-  $("#loader").fadeOut(1000, function () {
-    $(window).css("overflow-y", "auto");
-  });
+  setTimeout(function () {
+    $("#loader").fadeOut(1000, function () {
+      $(window).css("overflow-y", "auto");
+    });
+  }, 0);
 });
 
 /***/ }),
@@ -1953,7 +1997,7 @@ $(document).ready(function () {
       scroll_start = $(this).scrollTop();
 
       if (scroll_start > offset.top + window.innerHeight / 2) {
-        $("#top-menu").css('background-color', '#ffffff');
+        $("#top-menu").css('background-color', '#1E242AFF');
         $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
         $(".nav-logo").css('display', 'inline');
       } else {
