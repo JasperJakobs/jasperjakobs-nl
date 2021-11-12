@@ -50,7 +50,5 @@
         </div>
     </div>
 
-    <script src="{{ asset("js/particles.min.js") }}"></script>
-
 </body>
 </html>

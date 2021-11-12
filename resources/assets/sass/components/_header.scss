@@ -1,22 +1,13 @@
-header {
-    width: 99vw;
+.header {
+    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    #particle-js {
-        width: 99vw;
-        height: 50vh;
-        position: absolute;
-        z-index: -1;
-    }
-
     .logo {
         width: 50vw;
-
-        //animation: bounceIn 0.6s;
         transform: rotate(0deg) scale(1) translateZ(0);
         transition: all 0.4s cubic-bezier(.8, 1.8, .75, .75);
 
@@ -47,12 +38,8 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-    header {
+    .header {
         height: 100vh;
-
-        #particle-js {
-            height: 100vh;
-        }
 
         .logo {
             width: 35vw;

@@ -1,0 +1,45 @@
+.no-js .loader {
+    display: none;
+}
+
+.loader {
+    z-index: 100;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: $background;
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        top:50%;
+        left:49.7%;
+        transform:translate(-50%, -50%);
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .loader {
+        height: 100vh;
+
+        .logo {
+            width: 35vw;
+        }
+    }
+}
+
+.loading {
+    stroke-dasharray: 100;
+    animation: dash 15s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}

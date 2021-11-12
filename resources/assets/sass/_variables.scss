@@ -85,8 +85,9 @@ $gray-800:      #343a40 !default;
 $gray-900:      #212529 !default;
 $black:         #000 !default;
 
-$primary:       #203140 !default;
-$secondary:     #1252A6 !default;
+$primary:       $white !default;
+$secondary:     #E85D04 !default;
+$background:    #1E242A !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;

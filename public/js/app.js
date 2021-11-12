@@ -1844,7 +1844,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/navbar */ "./resources/assets/js/components/navbar.js");
 
-__webpack_require__(/*! ./components/particles */ "./resources/assets/js/components/particles.js");
+__webpack_require__(/*! ./components/loader */ "./resources/assets/js/components/loader.js");
 
 /***/ }),
 
@@ -1876,6 +1876,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/loader.js":
+/*!**************************************************!*\
+  !*** ./resources/assets/js/components/loader.js ***!
+  \**************************************************/
+/***/ (() => {
+
+$(window).load(function () {
+  $(window).css("overflow-y", "hidden");
+  $("#loader").fadeOut(1000, function () {
+    $(window).css("overflow-y", "auto");
+  });
+});
 
 /***/ }),
 
@@ -1937,7 +1952,7 @@ $(document).ready(function () {
     $(document).scroll(function () {
       scroll_start = $(this).scrollTop();
 
-      if (scroll_start > offset.top) {
+      if (scroll_start > offset.top + window.innerHeight / 2) {
         $("#top-menu").css('background-color', '#ffffff');
         $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
         $(".nav-logo").css('display', 'inline');
@@ -1949,17 +1964,6 @@ $(document).ready(function () {
     });
   }
 });
-
-/***/ }),
-
-/***/ "./resources/assets/js/components/particles.js":
-/*!*****************************************************!*\
-  !*** ./resources/assets/js/components/particles.js ***!
-  \*****************************************************/
-/***/ (() => {
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle-js', 'assets/particles.json');
 
 /***/ }),
 

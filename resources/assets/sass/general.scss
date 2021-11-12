@@ -7,6 +7,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    background-color: $background;
+}
+
 img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
