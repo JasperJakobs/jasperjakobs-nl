@@ -87,6 +87,7 @@ $black:         #000 !default;
 
 $primary:       $white !default;
 $secondary:     #E85D04 !default;
+$tertiary:      #30353B !default;
 $background:    #1E242A !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -221,3 +222,13 @@ $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
 $card-cap-padding-x: $card-spacer-x !default;
+
+.color {
+    &.color-primary {
+        color: $primary;
+    }
+
+    &.color-secondary {
+        color: $secondary;
+    }
+}

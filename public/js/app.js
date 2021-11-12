@@ -1891,27 +1891,23 @@ gsap.utils.toArray(".comparisonSection").forEach(function (section) {
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: section,
-      start: "center center",
-      // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+      start: "top top",
       end: function end() {
         return "+=" + 3000;
       },
       scrub: true,
-      pin: true,
-      anticipatePin: 1
+      pin: true
     },
     defaults: {
       ease: "none"
     }
-  }); // animate the container one way...
-
+  });
   tl.fromTo(section.querySelector(".afterImage"), {
     xPercent: -100,
     x: 0
   }, {
     xPercent: 0
-  }) // ...and the image the opposite way (at the same time)
-  .fromTo(section.querySelector(".afterImage img"), {
+  }).fromTo(section.querySelector(".afterImage img"), {
     xPercent: 100,
     x: 0
   }, {
@@ -1932,6 +1928,18 @@ $(window).load(function () {
   setTimeout(function () {
     $("#loader").fadeOut(1000, function () {
       $(window).css("overflow-y", "auto");
+      var timeline = new TimelineMax();
+      timeline.from(".wave_left", 1, {
+        y: -500,
+        autoAlpha: 0,
+        ease: "power1",
+        zIndex: 0
+      }, 0).from(".wave_right", 1, {
+        y: 500,
+        autoAlpha: 0,
+        ease: "power1",
+        zIndex: 0
+      }, 0);
     });
   }, 0);
 });

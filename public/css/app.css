@@ -4073,6 +4073,13 @@
 }
 
 @charset "UTF-8";
+.color.color-primary {
+  color: #fff;
+}
+.color.color-secondary {
+  color: #E85D04;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16987,6 +16994,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   z-index: 0;
+  visibility: hidden;
 }
 .header .wave_right {
   width: 80vw;
@@ -16994,6 +17002,7 @@ textarea.form-control-lg {
   right: -5px;
   bottom: 0;
   z-index: 0;
+  visibility: hidden;
 }
 .header .icon-scroll {
   display: none;
@@ -17178,6 +17187,10 @@ nav .active a {
     stroke-dashoffset: 1000;
   }
 }
+.fromzerotohero {
+  z-index: 1;
+  pointer-events: none;
+}
 .fromzerotohero .comparisonSection {
   position: relative;
   padding-bottom: 20%;
@@ -17192,16 +17205,23 @@ nav .active a {
 .fromzerotohero .comparisonImage img {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 50%;
 }
 .fromzerotohero .afterImage {
   position: absolute;
   overflow: hidden;
-  top: 0;
+  top: -25%;
   transform: translate(100%, 0px);
 }
 .fromzerotohero .afterImage img {
   transform: translate(-100%, 0px);
+}
+
+.about img {
+  width: 20vw;
+  height: auto;
+  background-color: #30353B;
+  border-radius: 50%;
 }
 
 :root {
@@ -17251,8 +17271,8 @@ h1, .h1 {
   font-size: 80px;
   letter-spacing: 10px;
   font-weight: 700;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -17261,4 +17281,5 @@ h1, .h1 {
 p {
   font-family: "Arimo", sans-serif;
   font-size: 17px;
+  color: white;
 }

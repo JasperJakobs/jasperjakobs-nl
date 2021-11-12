@@ -46,14 +46,16 @@ h1 {
     font-size: 80px;
     letter-spacing: 10px;
     font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-transform: uppercase;
     color: $primary;
     text-align: center;
 }
 
+
 p {
     font-family: 'Arimo', sans-serif;
     font-size: 17px;
+    color: white;
 }

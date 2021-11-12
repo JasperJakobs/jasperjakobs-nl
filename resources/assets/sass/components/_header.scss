@@ -22,6 +22,7 @@
         top: 0;
         left: 0;
         z-index: 0;
+        visibility: hidden;
     }
 
     .wave_right {
@@ -30,6 +31,7 @@
         right: -5px;
         bottom: 0;
         z-index: 0;
+        visibility: hidden;
     }
 
     .icon-scroll {

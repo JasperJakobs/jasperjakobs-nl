@@ -1,4 +1,7 @@
 .fromzerotohero {
+    z-index: 1;
+    pointer-events: none;
+
     .comparisonSection {
         position: relative;
         padding-bottom: 20%;
@@ -12,13 +15,13 @@
         img {
             width: 100%;
             position: absolute;
-            top: 0;
+            top: 50%;
         }
     }
     .afterImage {
         position: absolute;
         overflow: hidden;
-        top: 0;
+        top: -25%;
         transform: translate(100%, 0px);
         img {
             transform: translate(-100%, 0px);
