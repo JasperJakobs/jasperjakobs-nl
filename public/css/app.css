@@ -17168,6 +17168,7 @@ nav .active a {
   }
   nav ul li a {
     font-size: 18px;
+    text-decoration: none;
   }
   nav .active a {
     color: #E85D04;
@@ -17254,10 +17255,16 @@ nav .active a {
   .fromzerotohero .comparisonSection {
     width: 50vw;
   }
+  .fromzerotohero .tohero {
+    margin-top: 10%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .fromzerotohero .comparisonSection {
     width: 50vw;
+  }
+  .fromzerotohero .tohero {
+    margin-top: 5%;
   }
 }
 .about {

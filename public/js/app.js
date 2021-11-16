@@ -2102,7 +2102,7 @@ gsap.utils.toArray(".comparisonSection").forEach(function (section) {
       trigger: section,
       start: "top top",
       end: function end() {
-        return "+=" + 3000;
+        return "+=" + 2500;
       },
       scrub: true,
       pin: true
@@ -2213,8 +2213,8 @@ $(document).ready(function () {
     $(document).scroll(function () {
       scroll_start = $(this).scrollTop();
 
-      if (scroll_start > offset.top + window.innerHeight / 2) {
-        $("#top-menu").css('background-color', '#1E242AFF');
+      if (scroll_start > offset.top) {
+        $("#top-menu").css('background-color', '#ffffff');
         $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
         $(".nav-logo").css('display', 'inline');
       } else {

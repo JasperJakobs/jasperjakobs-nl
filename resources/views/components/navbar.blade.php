@@ -1,4 +1,4 @@
-<nav class="icon-scroll">
+<nav>
     <ul id="top-menu">
         <li style="float: left"><a href="#home"><img class="nav-logo" src="{{ asset('images/logo.svg') }}" alt="nav logo"></a></li>
         <li class="active"><a href="#home">Home</a></li>

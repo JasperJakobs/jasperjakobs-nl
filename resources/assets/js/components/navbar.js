@@ -24,7 +24,7 @@ menuItems.click(function(e){
 // Bind to scroll
 $(window).scroll(function(){
     // Get container scroll position
-    var fromTop = $(this).scrollTop() + topMenuHeight;
+    var fromTop = $(this).scrollTop()+topMenuHeight;
 
     // Get id of current scroll item
     var cur = scrollItems.map(function(){
@@ -52,8 +52,8 @@ $(document).ready(function(){
     if (startchange.length){
         $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
-            if(scroll_start > offset.top + (window.innerHeight / 2)) {
-                $("#top-menu").css('background-color', '#1E242AFF');
+            if(scroll_start > offset.top) {
+                $("#top-menu").css('background-color', '#ffffff');
                 $("#top-menu").css('box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
 
                 $(".nav-logo").css('display', 'inline');

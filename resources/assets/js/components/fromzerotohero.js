@@ -3,7 +3,7 @@ gsap.utils.toArray(".comparisonSection").forEach(section => {
         scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => "+=" + 3000,
+            end: () => "+=" + 2500,
             scrub: true,
             pin: true
         },

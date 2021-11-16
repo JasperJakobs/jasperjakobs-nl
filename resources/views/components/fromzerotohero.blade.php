@@ -13,5 +13,5 @@
         </div>
     </div>
 
-    <h1>...To <span class="color color-secondary">hero</span>!</h1>
+    <h1 class="tohero">...To <span class="color color-secondary">hero</span>!</h1>
 </section>
