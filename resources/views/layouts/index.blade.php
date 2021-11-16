@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creating apps, web-apps and more!">
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="description" content="Jasper Jakobs | Developer">
+    <meta name="keywords" content="Jasper Jakobs, Jasper, Jakobs, Portfolio, Developer, web, websites, php, html, css, javascript, werk, student, projecten">
+    <meta name="subject" content="Portfolio">
+    <meta name="copyright" content="Jasper Jakobs">
+    <meta name="language" content="NL">
+    <meta name="robots" content="index,follow">
+    <meta name="url" content="https://jasperjakobs.nl">
+    <meta name="identifier-URL" content="https://jasperjakobs.nl">
+
+    <meta property="og:title" content="JLasper Jakobs | jasperjakobs.nl">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Jasper Jakobs | Developer">
+    <meta property="og:image" content="{{ asset("images/web-banner.png") }}">
+    <meta property="og:image:url" content="{{ asset("images/web-banner.png") }}">
+    <meta property="og:image:secure_url" content="{{ asset("images/web-banner.png") }}">
+    <meta property="og:url" content="https://jasperjakobs.nl">
+    <meta property="og:site_name" content="jasperjakobs.nl">
+    <meta property="og:email" content="contact@jasperjakobs.nl">
+
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@jasperjakobs" />
-    <meta name="twitter:title" content="Jasper Jakobs | Software developer" />
-    <meta name="twitter:description" content="Creating apps, web-apps and more!" />
-    <meta name="twitter:image" content="asset('images/eagle.png')" />
+    <meta name="twitter:creator" content="@jasperjakobs" />
+    <meta name="twitter:title" content="jasperjakobs.nl" />
+    <meta name="twitter:description" content="Does stuff with computers!" />
+    <meta name="twitter:image" content="{{ asset("images/web-banner.png") }}" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -52,6 +72,5 @@
             </main>
         </div>
     </div>
-
 </body>
 </html>
