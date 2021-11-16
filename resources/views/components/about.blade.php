@@ -13,6 +13,8 @@
             alles en iedereen. Ik programmeer al sinds ik 14 jaar oud ben. Na het bouwen van modificaties voor spellen heb ik mezelf uitgebreid naar het wereldwijde web.</p>
             <br>
             <p>Op dit moment volg ik de studie HBO-ICT, met als profiel Infrastructure and Security Management (ISM) op de Hogeschool van Arnhem en Nijmegen.</p>
+            <br>
+            <a href="#" class="button">CV</a>
         </div>
         <div class="col-sm-4">
             <img class="me" src="{{ asset("images/memoji_happy.png") }}" alt="Me!">

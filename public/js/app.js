@@ -2053,6 +2053,10 @@ __webpack_require__(/*! ./components/loader */ "./resources/assets/js/components
 
 __webpack_require__(/*! ./components/fromzerotohero */ "./resources/assets/js/components/fromzerotohero.js");
 
+document.querySelectorAll('.button').forEach(function (button) {
+  return button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>';
+});
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":
