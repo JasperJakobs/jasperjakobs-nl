@@ -1,140 +1,46 @@
-:root {
-    --animate-delay: 0.5s;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-html, body {
+html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;
-    background-color: $background;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+}
+
+body {
+    background-color: $body-background;
+    color: $body-color;
+}
+
+h1, h2, h3 {
+    color: $title-color;
+    font-weight: $font-weight-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
-
-// Scrollbar
-/* Works on Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: $secondary $background;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    background: $background;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: $secondary;
-    border-radius: 20px;
-    border: 3px solid $background;
-}
-
-/* Text styling */
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    font-weight: 700;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-    color: $primary;
-    text-align: center;
-    display: block;
-}
-
-p {
-    font-family: 'Arimo', sans-serif;
-    font-size: .8vw;
-    color: white;
-    margin: 0 10px;
-}
-
-.button {
-    padding: 16px 32px;
-    font-family: 'Arimo', sans-serif;
-    font-weight: 500;
-    line-height: 16px;
-    border-radius: 24px;
-    display: inline-block;
-    outline: none;
-    text-decoration: none;
-    font-size: .8vw;
-    letter-spacing: .5px;
-    background: $secondary;
-    color: $white;
-    box-shadow: 0 2px 8px -1px #{rgba($secondary, .32)};
-    transform: translateY(var(--y)) translateZ(0);
-    transition: transform .44s ease, box-shadow .44s ease;
-    div {
-        display: flex;
-        overflow: hidden;
-        text-shadow: 0 .8vw 0 $white;
-        span {
-            display: block;
-            backface-visibility: hidden;
-            font-style: normal;
-            transition: transform .44s ease;
-            transform: translateY(var(--m)) translateZ(0);
-            $i: 1;
-            @while $i < 12 {
-                &:nth-child(#{$i}) {
-                    transition-delay: $i / 20 + s;
-                }
-                $i: $i + 1;
-            }
-        }
-    }
-    &:hover {
-        --y: -4px;
-        --shadow: 0 4px 20px -2px #{rgba($secondary, .5)};
-        span {
-            --m: calc(.8vw * -1);
-        }
-    }
-    &.reverse {
-        --font-shadow: calc(.8vw * -1);
-        &:hover {
-            span {
-                --m: calc(.8vw);
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 5rem;
-        letter-spacing: 7px;
-        font-weight: 700;
-    }
-
-    p, a {
-        margin: 0 1vw;
-    }
-}
-
-@media only screen and (min-width: 1224px) {
-    h1 {
-        font-size: 5vw;
-        letter-spacing: 10px;
-        font-weight: 700;
-    }
-
-    p, a {
-        margin: 0 1vw;
-        font-size: .8vw;
-    }
+    max-width: 100%;
+    height: auto;
 }

@@ -4,13 +4,14 @@
 
 .loader {
     z-index: 10002;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: $body-background;
+    transition: .2s;
 
     .logo {
         margin: 0;

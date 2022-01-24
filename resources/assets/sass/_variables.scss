@@ -1,5 +1,10 @@
-// Body
-$body-bg: #ffffff;
+// Z-index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// Header
+$header-height: 3.5rem;
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
@@ -12,7 +17,20 @@ $font-size-lg: .925rem !default;
 $font-size-sm: .75rem !default;
 $small-font-size: 80% !default;
 
-// Fonts
+$font-size-h1: 1.5rem !default;
+$font-size-h2: 1.25rem !default;
+$font-size-h3: 1rem !default;
+
+@media screen and (min-width: 968px) {
+    $font-size-base: 1rem !default;
+    $font-size-lg: 2.5rem !default;
+    $font-size-sm: .875rem !default;
+    $small-font-size: .813rem !default;
+
+    $font-size-h1: 2.5rem !default;
+    $font-size-h2: 1.5rem !default;
+    $font-size-h3: 1.25rem !default;
+}
 
 // Spacer
 $spacer: 1rem !default;
@@ -96,6 +114,8 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 
+$linear-gradient: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
+
 $theme-colors: (
     "primary":      $primary,
     "secondary":    $secondary,
@@ -123,8 +143,10 @@ $social-colors: (
 ) !default;
 
 // Body
-$body-bg: #F7F7FC !default;
-$body-color: $gray-700 !default;
+$body-background: $background !default;
+$body-color: #F7F7FC !default;
+
+$title-color: $secondary;
 
 .color {
     &.color-primary {

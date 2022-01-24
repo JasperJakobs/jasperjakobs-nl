@@ -1,9 +1,35 @@
-<nav>
-    <ul id="top-menu">
-        <li style="float: left"><a href="#home"><img class="nav-logo" src="{{ asset('images/logo.svg') }}" alt="nav logo"></a></li>
-        <li class="active"><a href="#home">Home</a></li>
-        <li><a href="#about">Over</a></li>
-        <li><a href="#projects">Projecten</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<nav class="nav container">
+    <a href="#" class="nav__logo">
+        <img src="{{ asset('images/logo.svg') }}" alt="Logo">
+    </a>
+
+    <div class="nav__menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                    <i class='bx bx-home-alt'></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#about" class="nav__link">
+                    <i class='bx bx-user'></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                    <i class='bx bx-book'></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#work" class="nav__link">
+                    <i class='bx bx-briefcase-alt-2' ></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                    <i class='bx bx-message-square-detail'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>

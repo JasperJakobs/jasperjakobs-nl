@@ -4,18 +4,15 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-// Animte.css
+// Animate.css
 @import '~animate.css';
 
 // Theme components
 @import 'components/_header.scss';
-@import 'components/_nav.scss';
 @import 'components/_loader.scss';
-@import 'components/_fromzerotohero.scss';
-@import 'components/_about.scss';
+//@import 'components/_fromzerotohero.scss';
+//@import 'components/_about.scss';
 
 // Theme
 @import 'general';
+@import 'reusable';
