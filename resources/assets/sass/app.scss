@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 // Variables
 @import 'variables';
@@ -10,8 +10,13 @@
 // Theme components
 @import 'components/_header.scss';
 @import 'components/_loader.scss';
-//@import 'components/_fromzerotohero.scss';
-//@import 'components/_about.scss';
+
+@import 'components/_home.scss';
+@import 'components/_about.scss';
+@import 'components/_skills.scss';
+@import 'components/_contact.scss';
+
+@import 'components/_footer.scss';
 
 // Theme
 @import 'general';

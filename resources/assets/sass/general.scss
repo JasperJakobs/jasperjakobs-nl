@@ -44,3 +44,59 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+// Buttons
+.button {
+    display: inline-block;
+    background-color: $secondary;
+    border: 2px solid $secondary;
+    color: $body-color;
+    padding: .75rem;
+    border-radius: .5rem;
+    font-weight: $font-weight-normal;
+    transition: .4s;
+
+    &:hover {
+        background-color: $secondary-alt;
+        border: 2px solid $secondary-alt;
+    }
+}
+
+.button--ghost {
+    background-color: transparent;
+    border: 2px solid $secondary;
+}
+
+// Change background header
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: $body-background;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: $secondary-alt;
+    }
+}
+
+// Large devices
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .section {
+        padding: 6.5rem 0 1rem !important;
+    }
+}
+

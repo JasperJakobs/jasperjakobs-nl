@@ -1,0 +1,65 @@
+<section class="contact section" id="contact">
+    <span class="section__subtitle">Get in touch</span>
+    <h2 class="section__title">Contact me</h2>
+
+    <div class="contact__container container grid">
+        <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+                <div class="contact__card">
+                    <i class="bx bx-mail-send contact__card-icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">contact@jasperjakobs.nl</span>
+
+                    <a href="mailto:contact@jasperjakobs.nl" class="contact__button">
+                        Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class="bx bxl-twitter contact__card-icon"></i>
+                    <h3 class="contact__card-title">Twitter</h3>
+                    <span class="contact__card-data">@JasperJakobs</span>
+
+                    <a href="https://twitter.com/JasperJakobs" target="_blank" class="contact__button">
+                        Visit <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class="bx bxl-linkedin-square contact__card-icon"></i>
+                    <h3 class="contact__card-title">Linkedin</h3>
+                    <span class="contact__card-data">in/JasperJakobs</span>
+
+                    <a href="https://linkedin.com/in/jasperjakobs" target="_blank" class="contact__button">
+                        Visit <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__content">
+            <h3 class="contact__title">Write me your project</h3>
+
+            <form action="" class="contact__form">
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Name</label>
+                    <input type="text" placeholder="John Doe" class="contact__form-input" />
+                </div>
+
+                <div class="contact__form-div">
+                    <label for="" class="contact__form-tag">Mail</label>
+                    <input type="email" placeholder="johndoe@example.com" class="contact__form-input" />
+                </div>
+
+                <div class="contact__form-div contact__form-area">
+                    <label for="" class="contact__form-tag">Project</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Something about your project..." class="contact__form-input"></textarea>
+                </div>
+
+                <button class="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>

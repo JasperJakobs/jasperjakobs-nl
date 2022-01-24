@@ -7,7 +7,7 @@ $z-modal: 1000;
 $header-height: 3.5rem;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Poppins', sans-serif;
 $line-height-base: 1.6 !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -104,7 +104,8 @@ $gray-900:      #212529 !default;
 $black:         #000 !default;
 
 $primary:       $white !default;
-$secondary:     #E85D04 !default;
+$secondary:     #F5B161FF !default;
+$secondary-alt: #e7943b !default;
 $tertiary:      #30353B !default;
 $background:    #1E242A !default;
 $success:       $green !default;
@@ -146,7 +147,7 @@ $social-colors: (
 $body-background: $background !default;
 $body-color: #F7F7FC !default;
 
-$title-color: $secondary;
+$title-color: $primary;
 
 .color {
     &.color-primary {
