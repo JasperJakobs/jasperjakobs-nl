@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'show']);
+Route::get('/demos', [IndexController::class, 'demosPage']);

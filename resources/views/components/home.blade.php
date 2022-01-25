@@ -1,15 +1,15 @@
 <section class="home section" id="home">
     <div class="home__container container grid">
         <div class="home__data">
-            <span class="home__greeting">Hello, I'm</span>
+            <span class="home__greeting">Hallo, ik ben</span>
             <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="home__name">
-            <h3 class="home__education">a guy who's good with computers.</h3>
+            <h3 class="home__education">iemand die goed is met computers.</h3>
 
             <div class="home__buttons">
                 <a href="#work" class="button button--ghost">
-                    My work
+                    Mijn werk
                 </a>
-                <a href="#about" class="button">About me</a>
+                <a href="#about" class="button">Over mij</a>
             </div>
         </div>
 
@@ -35,7 +35,7 @@
 
         <a href="#about" class="home__scroll">
             <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
+            <i class="bx bx-down-arrow-alt home__scroll-icon"></i>
         </a>
     </div>
 </section>

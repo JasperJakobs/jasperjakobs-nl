@@ -2,15 +2,15 @@
     <div class="footer__container container">
 
         <span class="footer__title">
-            <img src="{{ asset('images/logo.svg') }}" alt="Logo">
+            <a href="#home"><img src="{{ asset('images/logo.svg') }}" alt="Logo"></a>
         </span>
 
         <ul class="footer__list">
             <li>
-                <a href="#about" class="footer__link">About</a>
+                <a href="#about" class="footer__link">Over mij</a>
             </li>
             <li>
-                <a href="#work" class="footer__link">Projects</a>
+                <a href="#work" class="footer__link">Projecten</a>
             </li>
             <li>
                 <a href="#contact" class="footer__link">Contact</a>
@@ -33,7 +33,7 @@
         </ul>
 
         <span class="footer__copy">
-            &copy; jasperjakobs.nl, All rights reserved.
+            &copy; jasperjakobs.nl, Alle rechten voorbehouden.
         </span>
     </div>
 </footer>

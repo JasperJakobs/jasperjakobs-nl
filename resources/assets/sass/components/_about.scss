@@ -8,7 +8,7 @@
     object-fit: cover;
     border-radius: 1.5rem;
     justify-self: center;
-    background: $linear-gradient;
+    box-shadow: 0 0 16px hsla(0, 0%, 4%, .3);
 }
 
 .about__data {
@@ -17,7 +17,7 @@
 
 .about__info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 4fr);
     gap: .5rem;
     margin-bottom: 2rem;
 }
@@ -26,6 +26,7 @@
     background-color: $tertiary;
     border-radius: .75rem;
     padding: .75rem .5rem;
+    box-shadow: 0 0 16px hsla(0, 0%, 4%, .3);
 }
 
 .about__icon {
@@ -58,7 +59,7 @@
 // Medium devices
 @media screen and (min-width: 576px) {
     .about__info {
-        grid-template-columns: repeat(3, 140px);
+        grid-template-columns: repeat(4, 140px);
         justify-content: center;
     }
 
