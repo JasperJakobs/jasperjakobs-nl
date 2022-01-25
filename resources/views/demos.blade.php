@@ -2,7 +2,11 @@
 
 @section('content')
     @include('components.loader')
-    @include('components.header')
+    @include('components.alert')
+    <header class="header" id="header">
+        @include('components.navbar')
+    </header>
+
 
     <div class="main">
         @include('components.demos')

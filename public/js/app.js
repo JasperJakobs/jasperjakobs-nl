@@ -49,6 +49,9 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive);
+$(window).on('load', function () {
+  scrollActive();
+});
 
 /***/ }),
 

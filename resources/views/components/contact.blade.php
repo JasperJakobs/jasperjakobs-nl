@@ -42,7 +42,8 @@
         <div class="contact__content">
             <h3 class="contact__title">Vertel iets over je project</h3>
 
-            <form action="" class="contact__form">
+            <form action="send-message" method="post" class="contact__form">
+                @csrf
                 <div class="contact__form-div">
                     <label for="name" class="contact__form-tag">Naam</label>
                     <input type="text" placeholder="John Doe" class="contact__form-input" name="name" id="name" required/>
@@ -58,7 +59,7 @@
                     <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
                 </div>
 
-                <button class="button">Verstuur bericht</button>
+                <button class="button button--glow">Verstuur bericht</button>
             </form>
         </div>
     </div>

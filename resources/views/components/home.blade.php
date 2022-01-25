@@ -9,7 +9,7 @@
                 <a href="#work" class="button button--ghost">
                     Mijn werk
                 </a>
-                <a href="#about" class="button">Over mij</a>
+                <a href="#about" class="button button--glow">Over mij</a>
             </div>
         </div>
 

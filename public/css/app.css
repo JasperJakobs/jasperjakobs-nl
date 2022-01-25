@@ -4141,6 +4141,10 @@ img {
   border: 2px solid #e7943b;
 }
 
+.button--glow {
+  box-shadow: 0 0 20px #e7943b;
+}
+
 .button--ghost {
   background-color: transparent;
   border: 2px solid #F5B161FF;
@@ -4230,6 +4234,34 @@ img {
   display: block;
   font-size: 80%;
   color: #F5B161FF;
+}
+
+/* The alert message box */
+.alert {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  margin-bottom: 15px;
+  z-index: 1000;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
 .header {

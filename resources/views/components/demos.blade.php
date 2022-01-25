@@ -9,36 +9,12 @@
     </div>
 
     <div class="demos__container container grid">
-        <div class="demos__card mix snippet">
-            <img src="{{ asset('images/projects/jcpmbv.nl.png') }}" alt="Project" class="demos__img">
-
-            <h3 class="demos__title">Lorem</h3>
-
-            <a href="#" class="demos__button">Demo <i class="bx bxs-right-arrow-alt demos__icon"></i></a>
-        </div>
-
         <div class="demos__card mix school">
             <img src="{{ asset('images/projects/jcpmbv.nl.png') }}" alt="Project" class="demos__img">
 
-            <h3 class="demos__title">Ipsum</h3>
+            <h3 class="demos__title">Fletnix</h3>
 
-            <a href="#" class="demos__button">Demo <i class="bx bxs-right-arrow-alt demos__icon"></i></a>
-        </div>
-
-        <div class="demos__card mix snippet">
-            <img src="{{ asset('images/projects/jcpmbv.nl.png') }}" alt="Project" class="demos__img">
-
-            <h3 class="demos__title">Dolor</h3>
-
-            <a href="#" class="demos__button">Demo <i class="bx bxs-right-arrow-alt demos__icon"></i></a>
-        </div>
-
-        <div class="demos__card mix school">
-            <img src="{{ asset('images/projects/jcpmbv.nl.png') }}" alt="Project" class="demos__img">
-
-            <h3 class="demos__title">Amet</h3>
-
-            <a href="#" class="demos__button">Demo <i class="bx bxs-right-arrow-alt demos__icon"></i></a>
+            <a href="https://github.com/JasperJakobs/Fletnix" target="_blank" class="demos__button">Github repo <i class="bx bxs-right-arrow-alt demos__icon"></i></a>
         </div>
     </div>
 </section>

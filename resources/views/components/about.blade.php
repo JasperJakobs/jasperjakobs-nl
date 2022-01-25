@@ -42,7 +42,7 @@
             <a href="https://linkedin.com/in/jasperjakobs" class="button button--ghost" target="_blank">
                 LinkedIn
             </a>
-            <a href="#contact" class="button">Contact</a>
+            <a href="#contact" class="button button--glow">Contact</a>
         </div>
     </div>
 </section>

@@ -29,6 +29,24 @@ class IndexController extends Controller
         ]);
     }
 
+    public function sendMessage(Request $request) {
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'project' => ['required', 'string', 'max:255'],
+        ]);
+
+        $details = [
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'project' => $request['project']
+        ];
+
+        \Mail::to('contact@jasperjakobs.nl')->send(new \App\Mail\contactForm($details));
+
+        return redirect()->route('home')->with('success', 'Het formulier is succesvol verzonden!');
+    }
+
     public function randomLoadingMessage() {
         $loadingMessages = [
             "Gevatte dialogen genereren...",
