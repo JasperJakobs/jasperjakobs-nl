@@ -7,6 +7,10 @@
 // Animate.css
 @import '~animate.css';
 
+// Theme
+@import 'general';
+@import 'reusable';
+
 // Theme components
 @import 'components/_header.scss';
 @import 'components/_loader.scss';
@@ -17,7 +21,3 @@
 @import 'components/_contact.scss';
 
 @import 'components/_footer.scss';
-
-// Theme
-@import 'general';
-@import 'reusable';

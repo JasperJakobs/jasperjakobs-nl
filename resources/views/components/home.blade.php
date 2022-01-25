@@ -3,19 +3,21 @@
         <div class="home__data">
             <span class="home__greeting">Hello, I'm</span>
             <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="home__name">
-            <h3 class="home__education">Frontend Developer</h3>
+            <h3 class="home__education">a guy who's good with computers.</h3>
 
             <div class="home__buttons">
-                <a href="https://linkedin.com/in/jasperjakobs" class="button button--ghost" target="_blank">
-                    LinkedIn
+                <a href="#work" class="button button--ghost">
+                    My work
                 </a>
                 <a href="#about" class="button">About me</a>
             </div>
         </div>
 
-        <div class="home__handle">
-            <img src="{{ asset('images/perfil.png') }}" alt="" class="home__img">
+        <div class="home__waves">
+            <img src="{{ asset('images/wave_left.svg') }}" alt="Wave" class="home__wave-left">
+            <img src="{{ asset('images/wave_right.svg') }}" alt="Wave" class="home__wave-right">
         </div>
+
 
         <div class="home__social">
             <a href="https://linkedin.com/in/jasperjakobs" class="home__social-link" target="_blank">

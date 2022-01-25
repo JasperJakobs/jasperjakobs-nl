@@ -3,8 +3,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: $body-background;
     z-index: $z-fixed;
+    transition: .4s;
+}
+
+// Change background header
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+    background-color: $body-background;
 }
 
 .nav {

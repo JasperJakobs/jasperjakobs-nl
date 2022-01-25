@@ -10,28 +10,32 @@
                 <div class="about__box">
                     <i class='bx bx-award about__icon'></i>
                     <h3 class="about__title">Experience</h3>
-                    <span class="about__subtitle">4 Years Working</span>
+                    <span class="about__subtitle">5+ Years</span>
                 </div>
 
                 <div class="about__box">
-                    <i class='bx bx-briefcase-alt about__icon'></i>
-                    <h3 class="about__title">Completed</h3>
-                    <span class="about__subtitle">48 + Projects</span>
+                    <i class='bx bxs-baby-carriage  about__icon' ></i>
+                    <h3 class="about__title">Age</h3>
+                    <span class="about__subtitle">{{ $age }} years</span>
                 </div>
 
                 <div class="about__box">
-                    <i class='bx bx-support about__icon'></i>
-                    <h3 class="about__title">Support</h3>
-                    <span class="about__subtitle">Online 24/7</span>
+                    <i class='bx bx-current-location about__icon' ></i>
+                    <h3 class="about__title">Location</h3>
+                    <span class="about__subtitle">The Netherlands</span>
                 </div>
             </div>
 
             <p class="about__description">
-                Frontend Developer, I create web pages with UI / UX user interface,
-                I have years of experience and many clients are happy
-                with the projects I carried out.
+                When I was around 14 years old I began teaching myself how to program in Java.
+                Since then I have learned a lot of new skills I currently use to create awesome projects for awesome people.
             </p>
-
+            <p class="about__description">
+                I am currently studying infrastructure and security management at the <span style="font-style: italic">Hogeschool van Arnhem en Nijmegen (HAN)</span>.
+            </p>
+            <a href="https://linkedin.com/in/jasperjakobs" class="button button--ghost" target="_blank">
+                LinkedIn
+            </a>
             <a href="#contact" class="button">Contact me</a>
         </div>
     </div>

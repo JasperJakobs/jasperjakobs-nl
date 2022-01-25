@@ -27,6 +27,9 @@
             <a href="https://github.com/jasperjakobs" target="_blank" class="footer__social-link">
                 <i class='bx bxl-github'></i>
             </a>
+            <a href="https://linkedin.com/in/jasperjakobs" target="_blank" class="footer__social-link">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
         </ul>
 
         <span class="footer__copy">
