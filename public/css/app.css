@@ -4141,10 +4141,6 @@ img {
   border: 2px solid #e7943b;
 }
 
-.button--glow {
-  box-shadow: 0 0 20px #e7943b;
-}
-
 .button--ghost {
   background-color: transparent;
   border: 2px solid #F5B161FF;
