@@ -1,5 +1,5 @@
 <section class="work section" id="work">
-    <span class="section__subtitle">Ervaringen</span>
+    <span class="section__subtitle">Werk</span>
     <h2 class="section__title">Projecten</h2>
 
     <div class="work__container container grid">
@@ -21,7 +21,6 @@
                         </span>
                         <div class="blog-slider__title">Jakobs Consultancy | Projectmanagement B.V.</div>
                         <div class="blog-slider__text">Wordpress thema incl plugin voor de projecten pagina ontwikkeld. Gebruik gemaakt van bootstrap.</div>
-                        <a href="https://jcpmbv.nl" target="_blank" class="button button--glow">Bezoek website</a>
                     </div>
                 </div>
 
@@ -41,7 +40,6 @@
                         </span>
                         <div class="blog-slider__title">Grondradar B.V.</div>
                         <div class="blog-slider__text">Volledige website gebouwd op Laravel met een op maat gemaakt content management systeem.</div>
-                        <a href="https://grondradarbv.nl" target="_blank" class="button button--glow">Bezoek website</a>
                     </div>
                 </div>
 
@@ -61,7 +59,6 @@
                         </span>
                         <div class="blog-slider__title">ESS2Calendar</div>
                         <div class="blog-slider__text">Een tool die softbrick werkroosters synchroniseert met je agenda app. Gebouwd in Laravel.</div>
-                        <a href="https://e2c.jasperjakobs.nl" target="_blank" class="button button--glow">Bezoek website</a>
                     </div>
                 </div>
 
@@ -70,11 +67,7 @@
         </div>
     </div>
 
-    <?php
-        /*
-         * <div class="demo__button">
-         *  <a href="/demos" class="button button--ghost">Demos</a>
-         * </div>
-         */
-    ?>
+     <div class="demo__button">
+        <a href="https://github.com/JasperJakobs" class="button button--ghost"><i class="bx bxl-github"></i> GitHub</a>
+     </div>
 </section>

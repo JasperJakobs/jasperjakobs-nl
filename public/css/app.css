@@ -4270,7 +4270,6 @@ img {
 }
 
 .scroll-header {
-  box-shadow: 0 4px 4px rgba(10, 10, 10, 0.3);
   background-color: #1E242A;
 }
 
@@ -4316,8 +4315,7 @@ img {
 }
 
 .active-link {
-  background: linear-gradient(68.3deg, #f5b161 0.4%, #ec366e 100.2%);
-  box-shadow: 0 0 16px #F5B161FF;
+  background: #F5B161FF;
 }
 .active-link:hover {
   color: #F7F7FC;
@@ -4538,7 +4536,7 @@ img {
   .home__container {
     position: initial;
     justify-content: center;
-    margin-bottom: 35rem;
+    margin-bottom: 80vh;
   }
 
   .home__wave-left,
@@ -4548,17 +4546,26 @@ img {
 
   .home__wave-right {
     right: 0;
-    top: 20rem;
+    top: 30rem;
   }
 
   .home__scroll {
-    right: 0;
+    right: 3rem;
     bottom: 15rem;
   }
 
   .home__social {
-    left: 5rem;
-    bottom: 20rem;
+    bottom: 2.5rem;
+    left: 0;
+    display: grid;
+    row-gap: 0.5rem;
+  }
+  .home__social::after {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: #F5B161FF;
+    transform: rotate(90deg) translate(16px, -1px);
   }
 
   .home__data {
@@ -4582,10 +4589,6 @@ img {
   .home__social-link {
     padding: 0.4rem;
     font-size: 1.75rem;
-  }
-
-  .home__social::after {
-    transform: rotate(90deg) translate(16px, -3px);
   }
 
   .home__scroll-icon {

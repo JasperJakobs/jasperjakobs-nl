@@ -133,7 +133,7 @@
     .home__container {
         position: initial;
         justify-content: center;
-        margin-bottom: 35rem;
+        margin-bottom: 80vh;
     }
 
     .home__wave-left,
@@ -143,17 +143,27 @@
 
     .home__wave-right {
         right: 0;
-        top: 20rem;
+        top: 30rem;
     }
 
     .home__scroll {
-        right: 0;
+        right: 3rem;
         bottom: 15rem;
     }
 
     .home__social {
-        left: 5rem;
-        bottom: 20rem;
+        bottom: 2.5rem;
+        left: 0;
+        display: grid;
+        row-gap: .5rem;
+
+        &::after {
+            content: '';
+            width: 32px;
+            height: 2px;
+            background-color: $secondary;
+            transform: rotate(90deg) translate(16px, -1px);
+        }
     }
 
     .home__data {
@@ -177,10 +187,6 @@
     .home__social-link {
         padding: .4rem;
         font-size: 1.75rem;
-    }
-
-    .home__social::after {
-        transform: rotate(90deg) translate(16px, -3px);
     }
 
     .home__scroll-icon {
