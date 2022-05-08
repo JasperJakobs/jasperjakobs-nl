@@ -1,0 +1,24 @@
+name: Laravel
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+      with:
+        php-version: '7.4.3'
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: |
+        composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+        npm install --silent
+    - name: Build CSS and JavaScript
+      run: npm run prod
+    - name: Disable maintenance mode
+      run: php artisan up
