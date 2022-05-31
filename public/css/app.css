@@ -5306,3 +5306,11 @@ img {
     width: 30%;
   }
 }
+.test {
+  height: 5000px;
+}
+
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+}

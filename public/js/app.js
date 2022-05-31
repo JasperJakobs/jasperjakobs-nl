@@ -23,6 +23,8 @@ __webpack_require__(/*! ./components/_swiper */ "./resources/assets/js/component
 
 __webpack_require__(/*! ./components/_demos */ "./resources/assets/js/components/_demos.js");
 
+__webpack_require__(/*! ./components/_test */ "./resources/assets/js/components/_test.js");
+
 /***/ }),
 
 /***/ "./resources/assets/js/components/_active_link.js":
@@ -110,12 +112,11 @@ window.addEventListener('scroll', scrollHeader);
 /***/ (() => {
 
 $(window).on('load', function () {
-  $(window).css("overflow-y", "hidden");
+  $('body').css("overflow-y", "hidden");
   setTimeout(function () {
-    $("#loader").fadeOut(1000, function () {
-      $(window).css("overflow-y", "auto");
-    });
-  }, 0);
+    $('body').css("overflow-y", "auto");
+    $("#loader").fadeOut(1000);
+  }, 2000);
 });
 
 /***/ }),
@@ -139,6 +140,53 @@ var swiper = new Swiper('.blog-slider', {
     clickable: true
   }
 });
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/_test.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/js/components/_test.js ***!
+  \*************************************************/
+/***/ (() => {
+
+console.clear();
+var canvas = document.getElementById("hero-lightpass");
+var context = canvas.getContext("2d");
+canvas.width = 1158;
+canvas.height = 770;
+var frameCount = 33;
+
+var currentFrame = function currentFrame(index) {
+  return "https://www.apple.com/105/media/us/macbook-pro-14-and-16/2021/a1c5d17e-d8e4-4fa8-b70a-bc61bd266412/anim/hero-specs//large/large_".concat(index.toString().padStart(4, '0'), ".jpg");
+};
+
+var images = [];
+var airpods = {
+  frame: 0
+};
+
+for (var i = 0; i < frameCount; i++) {
+  var img = new Image();
+  img.src = currentFrame(i);
+  images.push(img);
+}
+
+gsap.to(airpods, {
+  frame: frameCount - 1,
+  snap: "frame",
+  ease: "none",
+  scrollTrigger: {
+    scrub: 0.5
+  },
+  onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
+
+});
+images[0].onload = render;
+
+function render() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(images[airpods.frame], 0, 0);
+}
 
 /***/ }),
 

@@ -1,8 +1,7 @@
 $(window).on('load', function(){
-    $(window).css("overflow-y", "hidden");
+    $('body').css("overflow-y", "hidden");
     setTimeout(function () {
-        $("#loader").fadeOut(1000, function () {
-            $(window).css("overflow-y", "auto");
-        });
-    }, 0);
+        $('body').css("overflow-y", "auto");
+        $("#loader").fadeOut(1000);
+    }, 2000);
 });

@@ -12,7 +12,8 @@
         @include('components.home')
         @include('components.about')
         @include('components.skills')
-        @include('components.work')
+{{--        @include('components.work')--}}
+        @include('components.test')
         @include('components.contact')
     </div>
 

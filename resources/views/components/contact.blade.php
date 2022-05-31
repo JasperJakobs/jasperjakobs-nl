@@ -59,7 +59,7 @@
                     <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
                 </div>
 
-                <button class="button button--glow">Verstuur bericht</button>
+                <button class="button">Verstuur bericht</button>
             </form>
         </div>
     </div>

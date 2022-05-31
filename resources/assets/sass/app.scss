@@ -24,3 +24,12 @@
 @import 'components/_demos.scss';
 
 @import 'components/_footer.scss';
+
+.test {
+    height: 5000px;
+}
+
+canvas {
+    max-width: 100vw;
+    max-height: 100vh;
+}
