@@ -45,12 +45,12 @@
         duration: 10,
     })
         .to("#macbook", {
+            ease: Sine.easeInOut,
             scale: 10,
             rotation: -10,
             duration: 10,
         })
         .to("#macbook", {
-            ease: Sine.easeInOut,
             opacity: 0,
             duration: 0,
             x: 10000,
