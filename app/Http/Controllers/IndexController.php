@@ -42,7 +42,7 @@ class IndexController extends Controller
             'project' => $request['project']
         ];
 
-//        \Mail::to('contact@jasperjakobs.nl')->send(new \App\Mail\contactForm($details));
+        \Mail::to('contact@jasperjakobs.nl')->send(new \App\Mail\contactForm($details));
 
         return redirect()->route('home')->with('success', 'Het formulier is succesvol verzonden!');
     }
