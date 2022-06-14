@@ -33,7 +33,7 @@
             </div>
 
             <p class="about__description">
-                Toen ik ongeveer 14 jaar oud was begon ik mezel programmeren te leren in de taal java.
+                Toen ik ongeveer 14 jaar oud was begon ik mezelf programmeren te leren in de taal java.
                 Sinds die tijd heb ik veel geleerd en nu gebruik ik die kennis om gave projecten te maken voor geweldige mensen!
             </p>
             <p class="about__description">
