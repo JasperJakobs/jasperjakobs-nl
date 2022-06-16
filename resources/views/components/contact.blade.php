@@ -42,7 +42,7 @@
         <div class="contact__content">
             <h3 class="contact__title">Vertel iets over je project</h3>
 
-            <form action="send-message" method="post" class="contact__form">
+            <form action="send-message" id="contact__form" method="post" class="contact__form">
                 @csrf
                 <div class="contact__form-div">
                     <label for="name" class="contact__form-tag">Naam</label>
@@ -59,8 +59,17 @@
                     <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
                 </div>
 
-                <button class="button">Verstuur bericht</button>
+                <button data-sitekey="reCAPTCHA_site_key"
+                        data-callback='onSubmit'
+                        data-action='submit'
+                        class="button g-recaptcha">Verstuur bericht</button>
             </form>
         </div>
     </div>
+
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact__form").submit();
+        }
+    </script>
 </section>
