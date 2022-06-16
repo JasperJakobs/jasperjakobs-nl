@@ -66,6 +66,13 @@ img {
     border: 2px solid $secondary;
 }
 
+.link {
+    color: $gray-500;
+}
+
+// reCAPTCHA
+.grecaptcha-badge { visibility: hidden; }
+
 // Tooltip
 /* Tooltip container */
 .tooltip {

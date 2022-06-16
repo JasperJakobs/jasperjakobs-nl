@@ -63,6 +63,10 @@
                         data-callback='onSubmit'
                         data-action='submit'
                         class="button g-recaptcha">Verstuur bericht</button>
+                <p class="footnote">This site is protected by reCAPTCHA and the Google
+                    <a class="link" target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a class="link" target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.
+                </p>
             </form>
         </div>
     </div>
