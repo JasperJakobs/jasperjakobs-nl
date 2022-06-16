@@ -94,6 +94,10 @@
     }
 }
 
+.footnote {
+    color: $gray-600;
+}
+
 // Medium devices
 @media screen and (min-width: 576px) {
     .contact__info {

@@ -3,5 +3,5 @@ $(window).on('load', function(){
     setTimeout(function () {
         $('body').css("overflow-y", "auto");
         $("#loader").fadeOut(1000);
-    }, 2000);
+    }, 0);
 });

@@ -4146,6 +4146,10 @@ img {
   border: 2px solid #F5B161FF;
 }
 
+.link {
+  color: #adb5bd;
+}
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -5118,6 +5122,10 @@ img {
 }
 .contact__form-area textarea {
   resize: none;
+}
+
+.footnote {
+  color: #6c757d;
 }
 
 @media screen and (min-width: 576px) {
