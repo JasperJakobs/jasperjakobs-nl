@@ -59,7 +59,7 @@
                     <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
                 </div>
 
-                <button data-sitekey="reCAPTCHA_site_key"
+                <button data-sitekey="6LdkPXcgAAAAAFN1HL-wtz_acc7yJhrZQpHXcKIB"
                         data-callback='onSubmit'
                         data-action='submit'
                         class="button g-recaptcha">Verstuur bericht</button>
