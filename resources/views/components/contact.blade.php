@@ -59,14 +59,15 @@
                     <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
                 </div>
 
-                <button data-sitekey="6LdkPXcgAAAAAFN1HL-wtz_acc7yJhrZQpHXcKIB"
-                        data-callback='onSubmit'
-                        data-action='submit'
-                        class="button g-recaptcha">Verstuur bericht</button>
-                <p class="footnote">This site is protected by reCAPTCHA and the Google
-                    <a class="link" target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and
-                    <a class="link" target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.
-                </p>
+{{--                <button data-sitekey="6LdkPXcgAAAAAFN1HL-wtz_acc7yJhrZQpHXcKIB"--}}
+{{--                        data-callback='onSubmit'--}}
+{{--                        data-action='submit'--}}
+{{--                        class="button g-recaptcha">Verstuur bericht</button>--}}
+                <p class="footnote" style="color: red">Het contact formulier is tijdelijk uitgeschakeld. Als je contact wilt opnemen, mail dan naar contact@jasperjakobs.nl</p>
+{{--                <p class="footnote">This site is protected by reCAPTCHA and the Google--}}
+{{--                    <a class="link" target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and--}}
+{{--                    <a class="link" target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.--}}
+{{--                </p>--}}
             </form>
         </div>
     </div>
