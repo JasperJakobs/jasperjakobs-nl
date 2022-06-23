@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'show'])->name('home');
 //Route::get('/demos', [IndexController::class, 'demosPage']);
-Route::post('/send-message', [IndexController::class, 'sendMessage']);
+//Route::post('/send-message', [IndexController::class, 'sendMessage']);
