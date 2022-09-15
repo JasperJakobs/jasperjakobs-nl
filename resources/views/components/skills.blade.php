@@ -15,7 +15,7 @@
                                 Expert
                                 <i class='bx bxs-info-circle'></i>
                                 <span class="tooltiptext">
-                                    Beste 15% van de 2.3M personen die de LinkedIn evaluatie hebben gedaan.
+                                    Beste 15% van de 3.2M personen die de LinkedIn evaluatie hebben gedaan.
                                 </span>
                             </span>
                         </div>
@@ -29,7 +29,7 @@
                                 Expert
                                 <i class='bx bxs-info-circle'></i>
                                 <span class="tooltiptext">
-                                    Beste 5% van de 1.3M personen die de LinkedIn evaluatie hebben gedaan.
+                                    Beste 5% van de 1.7M personen die de LinkedIn evaluatie hebben gedaan.
                                 </span>
                             </span>
                         </div>
@@ -53,7 +53,7 @@
                                 Expert
                                 <i class='bx bxs-info-circle'></i>
                                 <span class="tooltiptext">
-                                    Beste 5% van de 615.6k personen die de LinkedIn evaluatie hebben gedaan.
+                                    Beste 5% van de 723.3k personen die de LinkedIn evaluatie hebben gedaan.
                                 </span>
                             </span>
                         </div>
