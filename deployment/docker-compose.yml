@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
     jasperjakobsnl:
-        image: "ghcr.io/jasperjakobs/jasperjakobs-nl"
+        image: "ghcr.io/jasperjakobs/jasperjakobs-nl:master"
         container_name: jasperjakobs-nl
         networks:
             - traefik
