@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     libpq-dev
 
 COPY . /var/www/html
+COPY deployment/php.ini usr/local/etc/php/php.ini
 COPY .env.example .env
 COPY /deployment/entrypoint.sh /scripts/entrypoint.sh
 
@@ -21,6 +22,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN composer update
 RUN composer install
+RUN npm run production
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html/storage
 RUN php artisan key:generate
