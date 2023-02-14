@@ -35,4 +35,5 @@ networks:
   jasperjakobs-nl:
     driver: bridge
   traefik:
-    external: true
+    name: traefik
+    driver: bridge
