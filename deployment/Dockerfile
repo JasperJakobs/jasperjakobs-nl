@@ -21,7 +21,6 @@ RUN composer install
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html/storage
 RUN php artisan key:generate
-RUN php artisan jwt:secret
 
 #RUN rm public/storage
 RUN php artisan optimize:clear
