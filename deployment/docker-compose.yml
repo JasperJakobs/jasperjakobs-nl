@@ -1,17 +1,17 @@
 version: "3.9"
 
 services:
-    app:
+    jasperjakobsnl:
         build: .
         container_name: jasperjakobs-nl
         networks:
             - traefik
         labels:
             traefik.enable: "true"
-            traefik.http.routers.meldkamercoach.entrypoints: "websecure"
-            traefik.http.routers.meldkamercoach.rule: "Host(`jasperjakobs.nl`)"
-            traefik.http.routers.meldkamercoach.tls: "true"
-            traefik.http.routers.meldkamercoach.tls.certresolver: "lets-encrypt"
+            traefik.http.routers.jasperjakobsnl.entrypoints: "websecure"
+            traefik.http.routers.jasperjakobsnl.rule: "Host(`jasperjakobs.nl`)"
+            traefik.http.routers.jasperjakobsnl.tls: "true"
+            traefik.http.routers.jasperjakobsnl.tls.certresolver: "lets-encrypt"
             traefik.docker.network: "traefik"
 
 networks:
