@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+    app:
+        image: github.com:5050/JasperJakobs/jasperjakobs-nl:master
+        container_name: jasperjakobs-nl
+        networks:
+            - traefik
+        labels:
+            traefik.enable: "true"
+            traefik.http.routers.meldkamercoach.entrypoints: "websecure"
+            traefik.http.routers.meldkamercoach.rule: "Host(`jasperjakobs.nl`)"
+            traefik.http.routers.meldkamercoach.tls: "true"
+            traefik.http.routers.meldkamercoach.tls.certresolver: "lets-encrypt"
+            traefik.docker.network: "traefik"
+
+networks:
+  traefik:
+    external: true
