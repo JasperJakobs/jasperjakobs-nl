@@ -9,7 +9,10 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
-    libpq-dev
+    libpq-dev \
+    npm
+    
+RUN npm install -g npm@latest
 
 COPY . /var/www/html
 COPY deployment/php.ini usr/local/etc/php/php.ini
@@ -22,6 +25,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN composer update
 RUN composer install
+RUN npm install
 RUN npm run production
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html/storage
