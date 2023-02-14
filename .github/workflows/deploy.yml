@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Deploy app
 
 on:
   push:
@@ -68,7 +68,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          file: "/deployment/Dockerfile"
+          file: "deployment/Dockerfile"
 
 
       # Sign the resulting Docker image digest except on PRs.
