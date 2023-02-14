@@ -6,6 +6,8 @@ services:
         container_name: jasperjakobs-nl
         networks:
             - traefik
+        port:
+            - "${PORT}:${PORT}"
         labels:
             traefik.enable: "true"
             traefik.http.routers.meldkamercoach.entrypoints: "websecure"
