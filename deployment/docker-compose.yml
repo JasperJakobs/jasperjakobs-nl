@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
     app:
-        image: github.com:5050/JasperJakobs/jasperjakobs-nl:master
+        image: $GITHUB_REPOSITORY:$GITHUB_RUN_ID
         container_name: jasperjakobs-nl
         networks:
             - traefik
