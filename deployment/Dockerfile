@@ -13,6 +13,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY . /var/www/html
 COPY .env.example .env
+COPY /deployment/entrypoint.sh /scripts/entrypoint.sh
+
+RUN ["chmod", "+x", "/scripts/entrypoint.sh"]
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -28,4 +31,4 @@ RUN php artisan storage:link
 
 EXPOSE 9000
 
-RUN php-fpm
+ENTRYPOINT ["/scripts/entrypoint.sh"]
