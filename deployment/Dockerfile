@@ -3,7 +3,7 @@ FROM node:14-alpine
 COPY . .
 RUN npm install --silent
 
-RUN npm run prod
+RUN npm run build
 RUN npm install -g serve
 
 ARG PORT
