@@ -1,20 +1,38 @@
 version: "3.9"
 
 services:
-    jasperjakobsnl:
-        image: "ghcr.io/jasperjakobs/jasperjakobs-nl:master"
-        container_name: jasperjakobs-nl
-        networks:
-            - traefik
-        labels:
-            traefik.enable: "true"
-            traefik.http.routers.jasperjakobsnl.entrypoints: "websecure"
-            traefik.http.routers.jasperjakobsnl.rule: "Host(`jasperjakobs.nl`)"
-            traefik.http.routers.jasperjakobsnl.tls: "true"
-            traefik.http.routers.jasperjakobsnl.tls.certresolver: "lets-encrypt"
-            traefik.docker.network: "traefik"
+  api:
+    image: "ghcr.io/jasperjakobs/jasperjakobs-nl:master"
+    container_name: jasperjakobs-nl-api
+    environment:
+       APP_NAME: jasperjakobsnl
+       APP_URL: https://jasperjakobs.nl
+    networks:
+      - jasperjakobs-nl
+  web:
+    image: nginx:latest
+    container_name: jasperjakobs-nl-web
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - 8001:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ../:/var/www/html
+    networks:
+      - jasperjakobs-nl
+      - traefik
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.jasperjakobsnl.entrypoints: "websecure"
+      traefik.http.routers.jasperjakobsnl.rule: "Host(`jasperjakobs.nl`)"
+      traefik.http.routers.jasperjakobsnl.tls: "true"
+      traefik.http.routers.jasperjakobsnl.tls.certresolver: "lets-encrypt"
+      traefik.docker.network: "traefik"
 
 networks:
+  jasperjakobs-nl:
+    driver: bridge
   traefik:
     external: true
-    name: traefik
