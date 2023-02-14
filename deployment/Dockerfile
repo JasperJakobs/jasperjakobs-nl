@@ -3,10 +3,7 @@ FROM node:14-alpine
 COPY . .
 RUN npm install --silent
 
-ARG REACT_APP_API_ENDPOINT
-ARG REACT_APP_MAP_KEY
-
-RUN npm run build
+RUN npm run prod
 RUN npm install -g serve
 
 ARG PORT
