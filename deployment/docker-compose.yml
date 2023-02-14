@@ -36,4 +36,3 @@ networks:
     driver: bridge
   traefik:
     external: true
-    name: traefik_default
