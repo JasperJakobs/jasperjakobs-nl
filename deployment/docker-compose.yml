@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
     jasperjakobsnl:
-        build: .
+        image: github.com/jasperjakobs/jasperjakobs-nl#master
         container_name: jasperjakobs-nl
         networks:
             - traefik
