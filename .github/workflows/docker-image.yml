@@ -7,11 +7,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+     IMAGES_TAG: $GITHUB_REPOSITORY:$GITHUB_RUN_ID
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . -f ./deployment/Dockerfile --tag jasperjakobs-nl:$(date +%s)
+      run: docker build -f ./deployment/Dockerfile -t $IMAGE_TAG . --build-arg PORT="${PORT}"
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
