@@ -23,8 +23,6 @@ RUN ["chmod", "+x", "/scripts/entrypoint.sh"]
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/html
-
 RUN composer update
 RUN composer install
 RUN npm install
