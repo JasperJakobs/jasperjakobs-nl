@@ -12,8 +12,6 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     npm
     
-RUN a2enmod rewrite
-    
 #RUN npm install -g npm@latest
 
 COPY . /var/www/html
