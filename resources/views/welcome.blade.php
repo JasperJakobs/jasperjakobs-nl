@@ -1,7 +1,6 @@
 @extends('layouts.index')
 
 @section('content')
-    <h1>test</h1>
     @include('components.loader')
     @include('components.alert')
     <header class="header" id="header">
