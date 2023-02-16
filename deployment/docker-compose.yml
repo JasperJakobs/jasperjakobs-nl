@@ -14,7 +14,7 @@ services:
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
     build:
-      dokerfile: nginx-dockerfile
+      dockerfile: nginx-dockerfile
     depends_on:
       - api
     ports:
