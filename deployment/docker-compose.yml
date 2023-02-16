@@ -13,6 +13,8 @@ services:
     image: nginx:latest
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
+    build:
+      dokerfile: nginx-dockerfile
     depends_on:
       - api
     ports:
