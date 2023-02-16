@@ -28,7 +28,7 @@ RUN composer install
 RUN npm install
 RUN npm run production
 
-COPY ./public /var/www/html/public
+COPY ../public /var/www/html/public
 
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html/storage
