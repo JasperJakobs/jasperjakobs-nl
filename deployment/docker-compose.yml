@@ -12,10 +12,9 @@ services:
     volumes:
       - ../public:/var/www/html/public
   web:
+    image: nginx:latest
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
-    build:
-      dockerfile: nginx-dockerfile
     depends_on:
       - api
     ports:
