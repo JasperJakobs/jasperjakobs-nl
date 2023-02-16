@@ -1,7 +1,11 @@
 FROM nginx:latest
 
-COPY nginx.conf /etc/nginx/conf.d
+RUN apt-get update && apt-get install -y \
+    npm
 
+RUN npm run production
+
+COPY nginx.conf /etc/nginx/conf.d
 COPY . /var/www/html
 
 RUN mkdir /var/www/html -p && touch /var/www/html/index.php
