@@ -4,6 +4,7 @@ services:
   api:
     image: "ghcr.io/jasperjakobs/jasperjakobs-nl:master"
     container_name: jasperjakobs-nl-api
+    restart: unless-stopped
     environment:
        APP_NAME: jasperjakobsnl
        APP_URL: https://jasperjakobs.nl
