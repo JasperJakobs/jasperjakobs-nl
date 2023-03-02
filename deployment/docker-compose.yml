@@ -13,7 +13,8 @@ services:
 #    volumes:
 #      - ../public:/var/www/html/public
   web:
-    image: nginx:latest
+#    image: nginx:latest
+    build: NginxDockerfile
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
     depends_on:
