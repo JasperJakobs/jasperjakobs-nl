@@ -14,7 +14,9 @@ services:
 #      - ../public:/var/www/html/public
   web:
 #    image: nginx:latest
-    build: NginxDockerfile
+    build:
+      context: .
+      dockerfile: NginxDockerfile
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
     depends_on:
