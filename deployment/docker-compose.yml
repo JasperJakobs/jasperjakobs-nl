@@ -17,6 +17,7 @@ services:
     build:
       context: .
       dockerfile: NginxDockerfile
+      no-cache: true
     container_name: jasperjakobs-nl-web
     restart: unless-stopped
     depends_on:

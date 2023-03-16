@@ -1,3 +1,2 @@
 FROM nginx:latest
-ARG no-cache=true
-COPY --from=ghcr.io/jasperjakobs/jasperjakobs-nl:master /var/www/html/public /var/www/html/public skipcache
+COPY --from=ghcr.io/jasperjakobs/jasperjakobs-nl:master /var/www/html/public /var/www/html/public
