@@ -1,3 +1,6 @@
+FROM ghcr.io/jasperjakobs/jasperjakobs-nl:master as api
+WORKDIR /var/www/html
+
 FROM nginx:latest
-COPY --from=ghcr.io/jasperjakobs/jasperjakobs-nl:master /var/www/html/public/css /var/www/html/public/css
-COPY --from=ghcr.io/jasperjakobs/jasperjakobs-nl:master /var/www/html/public/js /var/www/html/public/js
+COPY --from=api /var/www/html/public/css /var/www/html/public/css
+COPY --from=api /var/www/html/public/js /var/www/html/public/js
