@@ -10,8 +10,8 @@ services:
        APP_URL: https://jasperjakobs.nl
     networks:
       - jasperjakobs-nl
-#    volumes:
-#      - ../public:/var/www/html/public
+    volumes:
+      - public:/var/www/html/public
   web:
 #    image: nginx:latest
     build:
