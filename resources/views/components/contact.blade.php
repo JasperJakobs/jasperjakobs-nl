@@ -2,9 +2,8 @@
     <span class="section__subtitle">Een connectie zoeken</span>
     <h2 class="section__title">Contact</h2>
 
-    <div class="contact__container container grid">
+    <div class="contact__container container">
         <div class="contact__content">
-            <h3 class="contact__title">Praat met me</h3>
 
             <div class="contact__info">
                 <div class="contact__card">
@@ -37,38 +36,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-
-        <div class="contact__content">
-            <h3 class="contact__title">Vertel iets over je project</h3>
-
-            <form action="send-message" id="contact__form" method="post" class="contact__form">
-                @csrf
-                <div class="contact__form-div">
-                    <label for="name" class="contact__form-tag">Naam</label>
-                    <input type="text" placeholder="John Doe" class="contact__form-input" name="name" id="name" required/>
-                </div>
-
-                <div class="contact__form-div">
-                    <label for="email" class="contact__form-tag">Mail</label>
-                    <input type="email" placeholder="johndoe@example.com" class="contact__form-input" name="email" id="email" required/>
-                </div>
-
-                <div class="contact__form-div contact__form-area">
-                    <label for="project" class="contact__form-tag">Project</label>
-                    <textarea name="project" id="project" cols="30" rows="10" placeholder="Iets over je project..." class="contact__form-input" required></textarea>
-                </div>
-
-{{--                <button data-sitekey="6LdkPXcgAAAAAFN1HL-wtz_acc7yJhrZQpHXcKIB"--}}
-{{--                        data-callback='onSubmit'--}}
-{{--                        data-action='submit'--}}
-{{--                        class="button g-recaptcha">Verstuur bericht</button>--}}
-                <p class="footnote" style="color: red">Het contact formulier is tijdelijk uitgeschakeld. Als je contact wilt opnemen, mail dan naar contact@jasperjakobs.nl</p>
-{{--                <p class="footnote">This site is protected by reCAPTCHA and the Google--}}
-{{--                    <a class="link" target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and--}}
-{{--                    <a class="link" target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.--}}
-{{--                </p>--}}
-            </form>
         </div>
     </div>
 
