@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'show'])->name('home');
+Route::get('/infinite-loading', [IndexController::class, 'infiniteLoader'])->name('infiniteLoading');
 //Route::get('/demos', [IndexController::class, 'demosPage']);
 //Route::post('/send-message', [IndexController::class, 'sendMessage']);
