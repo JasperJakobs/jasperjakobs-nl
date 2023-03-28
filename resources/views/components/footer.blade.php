@@ -21,9 +21,6 @@
             <a href="https://twiter.com/jasperjakobs" target="_blank" class="footer__social-link">
                 <i class='bx bxl-twitter'></i>
             </a>
-            <a href="https://instagram.com/jasperjakobs" target="_blank" class="footer__social-link">
-                <i class='bx bxl-instagram'></i>
-            </a>
             <a href="https://github.com/jasperjakobs" target="_blank" class="footer__social-link">
                 <i class='bx bxl-github'></i>
             </a>

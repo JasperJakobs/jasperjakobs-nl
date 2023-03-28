@@ -29,6 +29,12 @@ class IndexController extends Controller
         ]);
     }
 
+    public function infiniteLoader() {
+        return view('infiniteLoader', [
+            'loadingMessage' => $this->randomLoadingMessage()
+        ]);
+    }
+
     public function sendMessage(Request $request) {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
