@@ -56,7 +56,7 @@
 
     <!-- Analytics -->
     <!-- Hotjar Tracking Code for my site -->
-    <script>
+    <script type="text/javascript">
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3426868,hjsv:6};
