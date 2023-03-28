@@ -3,7 +3,7 @@
 return [
     'alert_accept' => 'Akkoord',
     'alert_settings' => 'Cookievoorkeuren',
-    'alert_text' => 'We gebruiken cookies om je een betere bezoekerservaring te bieden. Klik op akkoord om alle cookies te accepteren of ga naar cookieinstellingen om je voorkeuren te beheren.',
+    'alert_text' => 'We gebruiken cookies om je een betere bezoekerservaring te bieden. Klik op akkoord om alle cookies te accepteren.',
     'alert_title' => 'Deze website gebruikt cookies',
     'setting_analytics' => 'Analytische cookies',
     'setting_analytics_text' => 'laten ons toe om het gebruik van de website te analyseren en de bezoekerservaring te verbeteren.',
