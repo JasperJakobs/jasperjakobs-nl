@@ -99,7 +99,7 @@ jobs:
       
     - uses: actions/checkout@v3
     - name: Deploy the Docker image
-      run: docker-compose -f ./deployment/docker-compose.yml down && docker-compose -f ./deployment/docker-compose.yml build --pull && docker compose -f ./deployment/docker-compose.yml up -d 
+      run: docker compose -f ./deployment/docker-compose.yml down && docker image rm ghcr.io/jasperjakobs/jasperjakobs-nl:master && docker compose -f ./deployment/docker-compose.yml up -d --build
     
     #- name: Checkout
     #  uses: actions/checkout@v3

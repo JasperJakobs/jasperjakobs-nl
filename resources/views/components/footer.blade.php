@@ -27,6 +27,9 @@
             <a href="https://linkedin.com/in/jasperjakobs" target="_blank" class="footer__social-link">
                 <i class='bx bxl-linkedin-square'></i>
             </a>
+            <a href="/infinite-loading" target="_blank" class="footer__social-link">
+                <i class="fa-solid fa-loader"></i>
+            </a>
         </ul>
 
         <span class="footer__copy">
