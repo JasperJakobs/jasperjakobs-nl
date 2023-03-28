@@ -6,7 +6,7 @@
     <meta name="description" content="Creating apps, web-apps and more!">
 
     <meta name="description" content="Jasper Jakobs | Developer">
-    <meta name="keywords" content="Jasper Jakobs, Jasper, Jakobs, Portfolio, Developer, web, websites, php, html, css, javascript, werk, student, projecten">
+    <meta name="keywords" content="Jasper Jakobs, Jasper, Jakobs, Portfolio, Developer, web, websites, php, html, css, javascript, werk, student, projecten, cyber security, cybersecurity, informatiebeveiliging">
     <meta name="subject" content="Portfolio">
     <meta name="copyright" content="Jasper Jakobs">
     <meta name="language" content="NL">
@@ -14,7 +14,7 @@
     <meta name="url" content="https://jasperjakobs.nl">
     <meta name="identifier-URL" content="https://jasperjakobs.nl">
 
-    <meta property="og:title" content="JLasper Jakobs | jasperjakobs.nl">
+    <meta property="og:title" content="Jasper Jakobs | jasperjakobs.nl">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Jasper Jakobs | Developer">
     <meta property="og:image" content="{{ asset("images/web-banner.png") }}">
@@ -41,14 +41,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}?v={{ date('dmyhms') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,6 +54,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
+    <!-- Analytics -->
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3426868,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}?v={{ date('dmyhms') }}" rel="stylesheet">
