@@ -33,7 +33,7 @@ services:
     labels:
       traefik.enable: "true"
       traefik.http.routers.jasperjakobsnl.entrypoints: "websecure"
-      traefik.http.routers.jasperjakobsnl.rule: "Host(`jasperjakobs.nl`)"
+      traefik.http.routers.jasperjakobsnl.rule: "Host(`jasperjakobs.nl`, `www.jasperjakobs.nl`)"
       traefik.http.routers.jasperjakobsnl.tls: "true"
       traefik.http.routers.jasperjakobsnl.tls.certresolver: "lets-encrypt"
       traefik.docker.network: "traefik"
